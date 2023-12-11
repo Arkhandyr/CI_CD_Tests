@@ -17,5 +17,5 @@ jobs:
       uses: docker/login-action@v3.0.0
       with:
         username: Arkhandyr
-        password: 
+        password: ${{ secrets.PASSWORD_DOCKERHUB }}
           
