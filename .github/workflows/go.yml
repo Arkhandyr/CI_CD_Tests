@@ -16,7 +16,7 @@ jobs:
     strategy:
       matrix:
         go_version: ['1.21', '1.20', '>=1.21']
-        os: ['ubuntu-latest', 'ubuntu-20.04', 'ubuntu-22.04']
+        os: ['ubuntu-latest']
     steps:
     - uses: actions/checkout@v3
 
@@ -38,7 +38,7 @@ jobs:
     needs: test
     strategy:
       matrix:
-        os: ['ubuntu-latest', 'ubuntu-20.04', 'ubuntu-22.04']
+        os: ['ubuntu-latest']
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v3
